@@ -6,7 +6,7 @@ if(!$_SESSION["user"] || empty($_SESSION["user"])){
     die();
 }
 setcookie("login",$_SESSION['user']['cc'],time()+86400);
-include 'conexionDB.php'
+include 'query-functions';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,14 +18,9 @@ include 'conexionDB.php'
 </head>
 <body>
     <?php echo $_SESSION['user']['cc']."    ".$_SESSION['user']['nombre']; 
-    if(isset($_GET['close_session'])){
-        unset($_COOKIE['lgin']);
-        setcookie('login', '', time() - 3600, '/');
-        session_destroy();
-        header("location: index.php");
-        die();
-    }
+        logout();
     ?>
     <a href="lista_docentes.php?close_session=true">cerrar sesión</a>
+    <?php ?>
 </body>
 </html>

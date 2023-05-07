@@ -14,4 +14,20 @@
             header("location: lista_docentes.php");
         }
     }
+
+    function logout(){
+        if(isset($_GET['close_session'])){
+            unset($_COOKIE['lgin']);
+            setcookie('login', '', time() - 3600, '/');
+            session_destroy();
+            header("location: index.php");
+            die();
+        }
+    }
+
+    function get_modulos(){
+        return   mysqli_fetch_array(mysqli_query($GLOBALS['db'],
+        "SELECT* 
+        FROM Modulo"));
+    }
 ?>
