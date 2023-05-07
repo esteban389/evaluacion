@@ -3,7 +3,11 @@
     include 'login-functions.php';
     ob_start();
     if(isset($_SESSION["user"])){
-        header("location: lista_docentes.php",TRUE,301);
+        echo "hola";
+        header("location: lista_docentes.php");
+    }
+    if(!empty($_SESSION["user"])){
+        echo "hola2";
     }
 ?>
 <!DOCTYPE html>
