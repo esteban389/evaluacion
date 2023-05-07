@@ -1,6 +1,6 @@
 <?php
     include 'conexionDB.php';
-    function login($_POST){
+    function login(){
         $auth_usuario = mysqli_real_escape_string($db,(strip_tags($_POST["usuario"],ENT_QUOTES)));
         $auth_clave = mysqli_real_escape_string($db,(strip_tags($_POST["clave"],ENT_QUOTES)));
         $LOG_IN_QUERY_RESULT = mysqli_query($db,
