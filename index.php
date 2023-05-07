@@ -2,6 +2,9 @@
     include 'Components/Input.php';
     include 'login-functions.php';
     ob_start();
+    if($_SESSION["user"]){
+        header("location: lista_docentes.php",TRUE,301);
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
