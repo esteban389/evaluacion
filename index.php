@@ -1,17 +1,10 @@
 <?php 
     include 'Components/Input.php';
     include 'login-functions.php';
-    ob_start();
-    if(isset($_SESSION["user"])){
-        echo "hola";
+    if(isset($_COOKIE['login'])){
         header("location: lista_docentes.php");
     }
-    if(!empty($_SESSION["user"])){
-        echo "hola2";
-    }
-    if(session_status()==PHP_SESSION_ACTIVE) echo "sesion active";
-    if(session_status()==PHP_SESSION_DISABLED) echo "sesion disabled";
-    if(session_status()==PHP_SESSION_NONE) echo "sesion none";
+    ob_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
