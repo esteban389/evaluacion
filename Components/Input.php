@@ -1,5 +1,5 @@
 <?php
-function text_input_1(string $label, string $placeholder = "", string $id, bool $required=false)
+function text_input_1(string $label, string $placeholder, string $id, bool $required=false)
 {
  ob_start();
  ?>
