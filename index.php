@@ -14,9 +14,9 @@
 <body>
     <div style="padding: 20px;">
     <form method="POST">
-        <?php echo text_input_1(label: "Usuario", id: "usuario",required: true)?>
-        <?php echo text_input_1(label: "Clave",id: "clave", required: true)?>
-        <?php if(isset($_POST["log-in"])) login($_POST["usuario"]) ?>
+        <?php echo text_input_1(label: "Usuario",placeholder:"", id: "usuario",required: true)?>
+        <?php echo text_input_1(label: "Clave",placeholder:"",id: "clave", required: true)?>
+        <?php if(isset($_POST["log-in"])) login() ?>
         <input type="submit" class="btn" name="log-in" value="Iniciar sesión">
     </form>
     </div>
