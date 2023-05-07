@@ -1,6 +1,7 @@
 <?php 
     include 'Components/Input.php';
     include 'login-functions.php';
+    ob_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">

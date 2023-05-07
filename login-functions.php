@@ -1,4 +1,5 @@
 <?php
+    ob_start();
     include 'conexionDB.php';
     function login(){
         $auth_usuario = mysqli_real_escape_string($GLOBALS['db'],(strip_tags($_POST["usuario"],ENT_QUOTES)));
