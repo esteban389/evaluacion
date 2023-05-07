@@ -6,7 +6,7 @@ if(!$_SESSION["user"] || empty($_SESSION["user"])){
     die();
 }
 setcookie("login",$_SESSION['user']['cc'],time()+86400);
-include 'query-functions';
+include 'query-functions.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,6 +21,6 @@ include 'query-functions';
         logout();
     ?>
     <a href="lista_docentes.php?close_session=true">cerrar sesión</a>
-    <?php ?>
+    <?php  ?>
 </body>
 </html>
