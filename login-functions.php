@@ -6,7 +6,7 @@
         $LOG_IN_QUERY_RESULT = mysqli_query($GLOBALS['db'],
         "SELECT cc,nombre 
         FROM Estudiantes 
-        WHERE cc == '$auth_usuario' AND password =='$auth_clave'");
+        WHERE cc = '$auth_usuario' AND password = '$auth_clave'");
         if(mysqli_num_rows($LOG_IN_QUERY_RESULT)){
             session_start();
             $_SESSION['user'] = mysqli_fetch_array($LOG_IN_QUERY_RESULT);
