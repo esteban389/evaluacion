@@ -1,12 +1,10 @@
 <?php
-ob_start();
 session_start();
 if(!$_SESSION["user"] || empty($_SESSION["user"])){
     header("location: index.php",TRUE,301);
     die();
 }
-
-setcookie("login",$_SESSION['user']['cc'],86400);
+setcookie("login",$_SESSION['user']['cc'],time()+86400);
 include 'conexionDB.php'
 ?>
 <!DOCTYPE html>
