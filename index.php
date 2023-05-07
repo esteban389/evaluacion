@@ -9,7 +9,9 @@
     if(!empty($_SESSION["user"])){
         echo "hola2";
     }
-    echo session_start();
+    echo session_start()==PHP_SESSION_ACTIVE;
+    echo session_start()==PHP_SESSION_DISABLED;
+    echo session_start()==PHP_SESSION_NONE;
 ?>
 <!DOCTYPE html>
 <html lang="en">

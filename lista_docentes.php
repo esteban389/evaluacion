@@ -16,6 +16,9 @@ include 'conexionDB.php'
     <title>Document</title>
 </head>
 <body>
-    <?php echo $_SESSION['user']['cc']."    ".$_SESSION['user']['nombre']; ?>
+    <?php echo $_SESSION['user']['cc']."    ".$_SESSION['user']['nombre']; 
+        if(isset($_POST['close-session'])) session_destroy();
+    ?>
+    <input type="submit" value="cerrar sesión" name="close-session">
 </body>
 </html>
