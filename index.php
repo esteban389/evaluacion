@@ -9,6 +9,7 @@
     if(!empty($_SESSION["user"])){
         echo "hola2";
     }
+    echo session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +25,7 @@
     <form method="POST">
         <?php echo text_input_1(label: "Usuario",placeholder:"", id: "usuario",required: true)?>
         <?php echo text_input_1(label: "Clave",placeholder:"",id: "clave", required: true, type:"password")?>
-        <?php if(isset($_POST["log-in"])) login() ?>
+        <?php if(isset($_POST["log-in"])) login(); echo session_start(); ?>
         <input type="submit" class="btn" name="log-in" value="Iniciar sesión">
     </form>
     </div>
