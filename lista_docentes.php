@@ -21,6 +21,6 @@ include 'query-functions.php';
         logout();
     ?>
     <a href="lista_docentes.php?close_session=true">cerrar sesión</a>
-    <?php  ?>
+    <?php echo get_modulos()['Docente']; ?>
 </body>
 </html>
