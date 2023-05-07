@@ -1,8 +1,10 @@
 <?php 
+    ob_start();
     include 'Components/Input.php';
     include 'login-functions.php';
-   
-    ob_start();
+    if(isset($_COOKIE['login'])){
+        header("location: lista_docentes.php");
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
