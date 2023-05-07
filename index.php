@@ -9,9 +9,9 @@
     if(!empty($_SESSION["user"])){
         echo "hola2";
     }
-    echo session_start()==PHP_SESSION_ACTIVE;
-    echo session_start()==PHP_SESSION_DISABLED;
-    echo session_start()==PHP_SESSION_NONE;
+    echo session_status()==PHP_SESSION_ACTIVE;
+    echo session_status()==PHP_SESSION_DISABLED;
+    echo session_status()==PHP_SESSION_NONE;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +27,7 @@
     <form method="POST">
         <?php echo text_input_1(label: "Usuario",placeholder:"", id: "usuario",required: true)?>
         <?php echo text_input_1(label: "Clave",placeholder:"",id: "clave", required: true, type:"password")?>
-        <?php if(isset($_POST["log-in"])) login(); echo session_start(); ?>
+        <?php if(isset($_POST["log-in"])) login(); echo session_status(); ?>
         <input type="submit" class="btn" name="log-in" value="Iniciar sesión">
     </form>
     </div>
