@@ -19,6 +19,8 @@ include 'conexionDB.php'
 <body>
     <?php echo $_SESSION['user']['cc']."    ".$_SESSION['user']['nombre']; 
     if(isset($_GET['close_session'])){
+        unset($_COOKIE['lgin']);
+        setcookie('login', '', time() - 3600, '/');
         session_destroy();
         header("location: index.php");
         die();
