@@ -15,6 +15,6 @@ include 'conexionDB.php'
     <title>Document</title>
 </head>
 <body>
-    <?php echo $_SESSION['user']; ?>
+    <?php echo $_SESSION['user']['cc']; ?>
 </body>
 </html>
