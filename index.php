@@ -2,7 +2,7 @@
     include 'Components/Input.php';
     include 'login-functions.php';
     ob_start();
-    if($_SESSION["user"]){
+    if(isset($_SESSION["user"])){
         header("location: lista_docentes.php",TRUE,301);
     }
 ?>
@@ -19,7 +19,7 @@
     <div style="padding: 20px;">
     <form method="POST">
         <?php echo text_input_1(label: "Usuario",placeholder:"", id: "usuario",required: true)?>
-        <?php echo text_input_1(label: "Clave",placeholder:"",id: "clave", required: true)?>
+        <?php echo text_input_1(label: "Clave",placeholder:"",id: "clave", required: true, type:"password")?>
         <?php if(isset($_POST["log-in"])) login() ?>
         <input type="submit" class="btn" name="log-in" value="Iniciar sesión">
     </form>

@@ -1,5 +1,5 @@
 <?php
-function text_input_1(string $label, string $placeholder, string $id, bool $required=false)
+function text_input_1(string $label, string $placeholder, string $id, bool $required=false,string $type="text")
 {
  ob_start();
  ?>
@@ -7,14 +7,14 @@ function text_input_1(string $label, string $placeholder, string $id, bool $requ
         <label>
             <?php echo $label ?>
         </label>
-        <input type="text"  placeholder=
+        <input type=<?php echo $type ?>  placeholder=
             <?php 
                 echo "\"". $placeholder ."\" "; 
                 if($required) echo "required ";
                 echo "id=".$id;
                 echo " name=\"$id\""
             ?>
-        >
+        autocomplete="off">
     </div>
 <?php
  return ob_get_clean();
