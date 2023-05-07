@@ -17,8 +17,12 @@ include 'conexionDB.php'
 </head>
 <body>
     <?php echo $_SESSION['user']['cc']."    ".$_SESSION['user']['nombre']; 
-        if(isset($_POST['close-session'])) session_destroy();
+    if(isset($_GET['close_session'])){
+        session_destroy();
+        header("location: index.php");
+        die();
+    }
     ?>
-    <input type="submit" value="cerrar sesión" name="close-session">
+    <a href="lista_docentes.php?close_session=true">cerrar sesión</a>
 </body>
 </html>
