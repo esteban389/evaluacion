@@ -23,7 +23,7 @@ include 'query-functions.php';
     <a href="lista_docentes.php?close_session=true">cerrar sesión</a>
     <?php
         while(get_modulos()){
-            echo "<a>" . $modulos['Docente']. "</a>";
+            echo "<a>" . get_modulos()['Docente']. "</a>";
         }
     ?>
     
