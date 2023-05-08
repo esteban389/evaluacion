@@ -8,7 +8,7 @@
         }
         header("location: lista_docentes.php");
     }
-    $error = $_GET['error'];
+    if(isset($_GET['error'])) $error = $_GET['error'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,11 +19,6 @@
     <link href="style.css" rel="stylesheet">
     <link rel="icon" href="static/favicon.ico">
     <title>Inicia sesión</title>
-    <style>
-        body{
-            background-color: #cccccc;
-        }
-    </style>
 </head>
 <body>
     <div>

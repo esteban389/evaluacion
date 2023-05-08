@@ -19,15 +19,21 @@ $lista_modulos= get_modulos();
     <title>Seleccionar docente</title>
 </head>
 <body>
-    <?php echo $_SESSION['user']['cc']."    ".$_SESSION['user']['nombre']; 
+    <div>
+        <?php 
+        echo "<strong class=\"user-name\">".$_SESSION['user']['nombre']."</strong>"; 
+        echo $_SESSION['user']['cc']; 
         logout();
-    ?>
-    <a href="lista_docentes.php?close_session=true">cerrar sesión</a>
-    <?php
-    while($row = mysqli_fetch_array($lista_modulos)){
-        echo "<a href=\"evaluacion_docente.php?id=" . $row['id'] . "\">" . $row['Docente']. "</a> <br>";
-    }
-    ?>
+        ?>
+        <a href="lista_docentes.php?close_session=true">cerrar sesión</a>
+    </div>
+    <div>
+        <?php
+        while($row = mysqli_fetch_array($lista_modulos)){
+            echo "<a href=\"evaluacion_docente.php?id=" . $row['id'] . "\">" . $row['Docente']. "</a> <br>";
+        }
+        ?>
+    </div>
     
 </body>
 </html>

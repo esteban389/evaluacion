@@ -107,6 +107,7 @@ html, body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: rgb(var(--color-surface-200));
 }
 img, picture, video, canvas, svg {
   display: block;
@@ -143,6 +144,15 @@ p, h1, h2, h3, h4, h5, h6,label,input {
 	--tw-bg-opacity: 1;
 background-color: rgb(var(--color-primary-500) / var(--tw-bg-opacity));
 color: rgb(var(--on-primary));
+}
+.login-btn:hover{
+	--tw-brightness: brightness(1.15);
+	filter: var(--tw-blur) 
+	var(--tw-brightness)
+	var(--tw-contrast) var(--tw-grayscale)
+	var(--tw-hue-rotate) var(--tw-invert)
+	var(--tw-saturate) var(--tw-sepia)
+	var(--tw-drop-shadow);
 }
 .text_input_1{
   display: flex;
@@ -182,7 +192,10 @@ color: rgb(var(--on-primary));
 	width: 40%;
 }
 .error-message{
-	color: var(--color-error-500);
+	color: rgb(var(--color-error-500));
     margin-top: -10px;
     margin-bottom: 10px;
+}
+.user-name{
+
 }
