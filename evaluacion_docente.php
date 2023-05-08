@@ -5,7 +5,8 @@ if(!$_SESSION["user"] || empty($_SESSION["user"])){
     header("location: index.php",TRUE,301);
     die();
 }
-$docente = $_GET['id'];
+include 'query-functions.php';
+$docente = mysqli_fetch_array(get_docente($_GET['id']));
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,6 +17,6 @@ $docente = $_GET['id'];
     <title>Document</title>
 </head>
 <body>
-    <?php echo "HOLA" . $docente; ?>
+    <?php echo "HOLA " . $docente['Docente']; ?>
 </body>
 </html>

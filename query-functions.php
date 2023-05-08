@@ -40,4 +40,11 @@
         "SELECT* 
         FROM Modulo");
     }
+
+    function get_docente($id_docente):mysqli_result{
+        return  mysqli_query($GLOBALS['db'],
+        "SELECT* 
+        FROM Modulo
+        WHERE id=$id_docente");
+    }
 ?>
