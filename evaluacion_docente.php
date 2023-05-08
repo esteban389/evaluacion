@@ -1,8 +1,8 @@
 <?php
 ob_start();
 session_start();
-if(!$_SESSION["email"] || empty($_SESSION["email"])){
-    header("location: index.html",TRUE,301);
+if(!$_SESSION["user"] || empty($_SESSION["user"])){
+    header("location: index.php",TRUE,301);
     die();
 }
 $docente = $_GET['id'];
