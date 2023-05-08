@@ -22,7 +22,7 @@ include 'query-functions.php';
     ?>
     <a href="lista_docentes.php?close_session=true">cerrar sesión</a>
     <?php
-        while($modulos = mysqli_fetch_array(get_modulos())){
+        while(get_modulos()){
             echo "<a>" . $modulos['Docente']. "</a>";
         }
     ?>
