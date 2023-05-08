@@ -17,10 +17,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <title>Document</title>
+    <style>
+        body{
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
-    <div style="padding: 20px;">
-    <form method="POST">
+    <div>
+    <form method="POST" class="login-form">
         <?php echo text_input_1(label: "Usuario",placeholder:"", id: "usuario",required: true)?>
         <?php echo text_input_1(label: "Clave",placeholder:"",id: "clave", required: true, type:"password")?>
         <?php if(isset($_POST["log-in"])) login();?>
