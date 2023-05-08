@@ -90,7 +90,7 @@ $docente = mysqli_fetch_array(get_docente($_GET['id']));
         </div> 
         <label for="">Observaciones</label>
         <textarea name="observaciones" id="" cols="30" rows="10"></textarea>
-        <button class="btn login-btn">Enviar</button>
+        <a class="btn login-btn" href="lista_docentes.php">Enviar</a>
     </div>
 </body>
 </html>

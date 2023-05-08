@@ -235,10 +235,11 @@ right: 2%;
 }
 
 .lista_preguntas{
+	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
-	padding-inline: 5%;
+	padding: 5%;
 	background-color: rgb(var(--color-tertiary-700));
 }
 .lista_preguntas>div{
