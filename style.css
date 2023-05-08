@@ -197,5 +197,5 @@ color: rgb(var(--on-primary));
     margin-bottom: 10px;
 }
 .user-name{
-
+	text-transform: uppercase;
 }
