@@ -23,9 +23,9 @@ $modulos = get_modulos();
     ?>
     <a href="lista_docentes.php?close_session=true">cerrar sesión</a>
     <?php
-        while($modulos){
+        while(mysqli_fetch_array($modulos)){
             //echo "<a>" . $modulos['Docente']. "</a>";
-        }    
+        }
     ?>
     
 </body>
