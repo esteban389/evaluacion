@@ -22,6 +22,9 @@ include 'query-functions.php';
     ?>
     <a href="lista_docentes.php?close_session=true">cerrar sesión</a>
     <?php
+    echo gettype(get_modulos());
+    $lista_modulos= get_modulos();
+    echo gettype($lista_modulos);
             echo "<a>" . get_modulos()['Docente']. "</a>";
     ?>
     
