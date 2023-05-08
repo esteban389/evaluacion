@@ -24,7 +24,7 @@ $lista_modulos= get_modulos();
     <a href="lista_docentes.php?close_session=true">cerrar sesión</a>
     <?php
     while($row = mysqli_fetch_array($lista_modulos)){
-        echo "<a href=\"index.php \">" . $row['Docente']. "</a> <br>";
+        echo "<a href=\"evaluacion_docente.php\">" . $row['Docente']. "</a> <br>";
     }
     ?>
     

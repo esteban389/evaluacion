@@ -16,6 +16,6 @@ $docente = $_GET['id'];
     <title>Document</title>
 </head>
 <body>
-    <?php echo $docente; ?>
+    <?php echo "HOLA" . $docente; ?>
 </body>
 </html>
