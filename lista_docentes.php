@@ -7,7 +7,6 @@ if(!$_SESSION["user"] || empty($_SESSION["user"])){
 }
 setcookie("login",$_SESSION['user']['cc'],time()+86400);
 include 'query-functions.php';
-$modulos = get_modulos();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,7 +22,7 @@ $modulos = get_modulos();
     ?>
     <a href="lista_docentes.php?close_session=true">cerrar sesión</a>
     <?php
-        while($modulos = mysqli_fetch_array($modulos)){
+        while($modulos = mysqli_fetch_array(get_modulos())){
             echo "<a>" . $modulos['Docente']. "</a>";
         }
     ?>
