@@ -19,6 +19,74 @@ $docente = mysqli_fetch_array(get_docente($_GET['id']));
     <title>Evaluar el docente</title>
 </head>
 <body>
-    <?php echo "HOLA " . $docente['Docente']; ?>
+    <div class="info_usuario">
+        <?php 
+            echo user_info();
+            logout();
+            ?>
+            <a class="btn logout-btn" href="lista_docentes.php?close_session=true">salir</a>
+    </div>
+    <div class="lista_preguntas">
+        <div>       
+            <p>
+                El docente mantiene el liderazgo durante la clase
+            </p>
+            <select name="nota" id="1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>   
+        <div>       
+            <p>
+                El docente muestra respeto por los demás
+            </p>
+            <select name="nota" id="1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div> 
+        <div>       
+            <p>
+                El docente facilita diversas dinámicas para la clase
+            </p>
+            <select name="nota" id="1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div> 
+        <div>       
+            <p>
+                El docente despierta la motivación
+            </p>
+            <select name="nota" id="1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div> 
+        <div>       
+            <p>
+                Fueron cumplidos los objetivos de aprendizaje
+            </p>
+            <select name="nota" id="1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div> 
+    </div>
 </body>
 </html>

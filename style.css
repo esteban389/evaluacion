@@ -207,6 +207,10 @@ margin-top: 5%;
 	width: 100%;
 	color: black;
 }
+.lista_docentes>a{
+	display: flex;
+	flex-direction: row;
+}
 .info_usuario{
 	display: flex;
 	flex-direction: column;
@@ -218,10 +222,23 @@ margin-top: 5%;
 	--tw-bg-opacity: 1;
 background-color: rgb(var(--color-tertiary-500) / var(--tw-bg-opacity));
 color: rgb(var(--on-primary));
-margin-top: 5%;
+position: absolute;
+top: 2%;
+right: 2%;
 }
 .logout-btn:hover{
 	--tw-brightness: brightness(1.45);
 	filter: var(--tw-brightness);
 	box-shadow: 0px 4px 28px rgb(var(--color-surface-500) / var(--tw-bg-opacity));
+}
+
+.lista_preguntas{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	padding-inline: 5%;
+}
+.lista_preguntas p{
+	width: 100%;
+	color: black;
 }
