@@ -6,6 +6,7 @@ if(!$_SESSION["user"] || empty($_SESSION["user"])){
     die();
 }
 include 'query-functions.php';
+include 'Components/ui.php';
 $docente = mysqli_fetch_array(get_docente($_GET['id']));
 ?>
 <!DOCTYPE html>
