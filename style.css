@@ -139,6 +139,11 @@ p, h1, h2, h3, h4, h5, h6,label,input {
 	transition-duration: .15s;
 	border-radius: var(--theme-rounded-base);
 }
+.login-btn{
+	--tw-bg-opacity: 1;
+background-color: rgb(var(--color-primary-500) / var(--tw-bg-opacity));
+color: rgb(var(--on-primary));
+}
 .text_input_1{
   display: flex;
   flex-direction: column;
