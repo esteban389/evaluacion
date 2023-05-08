@@ -35,9 +35,9 @@
         }
     }
 
-    function get_modulos():array{
-        return   mysqli_fetch_array(mysqli_query($GLOBALS['db'],
+    function get_modulos():mysqli_result{
+        return  mysqli_query($GLOBALS['db'],
         "SELECT* 
-        FROM Modulo"));
+        FROM Modulo");
     }
 ?>

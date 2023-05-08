@@ -25,8 +25,8 @@ include 'query-functions.php';
     echo gettype(get_modulos());
     $lista_modulos= get_modulos();
     echo gettype($lista_modulos);
-    for($i=0; $i<sizeof($lista_modulos);$i++){
-        echo "<a>" . get_modulos()['Docente']. "</a>";
+    while($row = mysqli_fetch_array($lista_modulos)){
+        echo "<a>" . $row['Docente']. "</a>";
     }
     ?>
     
