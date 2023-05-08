@@ -20,17 +20,18 @@
     <title>Inicia sesión</title>
     <style>
         body{
-            background-color: #f2f2f2;
+            background-color: #cccccc;
         }
     </style>
 </head>
 <body>
     <div>
     <form method="POST" class="login-form">
+        <img src="static/Escudo_de_la_Universidad_Libre_de_Colombia.svg.png" alt="Escudo de la Universidad Libre de Colombia">
         <?php echo text_input_1(label: "Usuario",placeholder:"", id: "usuario",required: true)?>
         <?php echo text_input_1(label: "Clave",placeholder:"",id: "clave", required: true, type:"password")?>
         <?php if(isset($_POST["log-in"])) login();?>
-        <input type="submit" class="btn" name="log-in" value="Iniciar sesión">
+        <input type="submit" class="btn login-btn" name="log-in" value="Iniciar sesión">
     </form>
     </div>
 </body>
