@@ -7,6 +7,7 @@ if(!$_SESSION["user"] || empty($_SESSION["user"])){
 }
 setcookie("login",$_SESSION['user']['cc'],time()+86400);
 include 'query-functions.php';
+include 'Components/ui.php';
 $lista_modulos= get_modulos();
 ?>
 <!DOCTYPE html>
@@ -21,16 +22,15 @@ $lista_modulos= get_modulos();
 <body>
     <div>
         <?php 
-        echo "<strong class=\"user-name\">".$_SESSION['user']['nombre']."</strong>"; 
-        echo $_SESSION['user']['cc']; 
-        logout();
+            user_info();
+            logout();
         ?>
         <a href="lista_docentes.php?close_session=true">cerrar sesión</a>
     </div>
     <div>
         <?php
         while($row = mysqli_fetch_array($lista_modulos)){
-            echo "<a href=\"evaluacion_docente.php?id=" . $row['id'] . "\">" . $row['Docente']. "</a> <br>";
+            mostrar_lista_docentes($row);
         }
         ?>
     </div>
