@@ -7,6 +7,7 @@ if(!$_SESSION["user"] || empty($_SESSION["user"])){
 }
 setcookie("login",$_SESSION['user']['cc'],time()+86400);
 include 'query-functions.php';
+$modulos = get_modulos();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,6 +22,11 @@ include 'query-functions.php';
         logout();
     ?>
     <a href="lista_docentes.php?close_session=true">cerrar sesión</a>
-    <?php echo get_modulos()['Docente']; ?>
+    <?php
+        while($modulos){
+            echo "<a href=\"evaluar_docente?id=\"". $modulos['id'] . ">" . $modulos['Docente']. "</a>";
+        }    
+    ?>
+    
 </body>
 </html>
