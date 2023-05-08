@@ -204,11 +204,20 @@ color: rgb(var(--on-primary));
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
+	align-items: center;
+}
+.lista_docentes>a{
+	display: flex;
+	flex-direction: row;
+	gap: 10%;
+}
+.lista_docentes>p{
+	width: 100%;
 	color: black;
 }
-
-.infor_usuarios{
+.info_usuarios{
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
+	align-items: center;
 }
