@@ -198,10 +198,12 @@ margin-top: 5%;
 	text-transform: uppercase;
 }
 .lista_docentes{
+	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
 	padding-inline: 5%;
+	background-color: rgb(var(--color-tertiary-700));
 }
 .lista_docentes p{
 	width: 100%;
@@ -223,7 +225,7 @@ margin-top: 5%;
 background-color: rgb(var(--color-tertiary-500) / var(--tw-bg-opacity));
 color: rgb(var(--on-primary));
 position: absolute;
-top: 2%;
+top: 1%;
 right: 2%;
 }
 .logout-btn:hover{
@@ -237,8 +239,12 @@ right: 2%;
 	flex-direction: column;
 	gap: 5px;
 	padding-inline: 5%;
+	background-color: rgb(var(--color-tertiary-700));
+}
+.lista_preguntas>div{
+	display: flex;
+	flex-direction: row;
 }
 .lista_preguntas p{
-	width: 100%;
 	color: black;
 }

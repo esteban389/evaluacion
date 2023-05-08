@@ -88,6 +88,9 @@ $docente = mysqli_fetch_array(get_docente($_GET['id']));
                 <option value="5">5</option>
             </select>
         </div> 
+        <label for="">Observaciones</label>
+        <textarea name="observaciones" id="" cols="30" rows="10"></textarea>
+        <button class="btn login-btn">Enviar</button>
     </div>
 </body>
 </html>
