@@ -181,3 +181,8 @@ color: rgb(var(--on-primary));
 .login-form>img{
 	width: 40%;
 }
+.error-message{
+	color: var(--color-error-500);
+    margin-top: -10px;
+    margin-bottom: 10px;
+}

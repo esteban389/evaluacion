@@ -8,6 +8,7 @@
         }
         header("location: lista_docentes.php");
     }
+    $error = $_GET['error'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,9 +29,11 @@
     <div>
     <form method="POST" class="login-form">
         <img src="static/Escudo_de_la_Universidad_Libre_de_Colombia.svg.png" alt="Escudo de la Universidad Libre de Colombia">
-        <?php echo text_input_1(label: "Usuario",placeholder:"", id: "usuario",required: true)?>
-        <?php echo text_input_1(label: "Clave",placeholder:"",id: "clave", required: true, type:"password")?>
-        <?php if(isset($_POST["log-in"])) login();?>
+
+        <?php if($error=="true") echo "<p class=\"error-message\">Usuario o contraseña invalida</p>";
+         echo text_input_1(label: "Usuario",placeholder:"", id: "usuario",required: true);
+         echo text_input_1(label: "Clave",placeholder:"",id: "clave", required: true, type:"password");
+         if(isset($_POST["log-in"]))login();?>
         <input type="submit" class="btn login-btn" name="log-in" value="Iniciar sesión">
     </form>
     </div>
