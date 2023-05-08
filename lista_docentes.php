@@ -26,7 +26,7 @@ $lista_modulos= get_modulos();
             echo user_info();
             logout();
             ?>
-            <a href="lista_docentes.php?close_session=true">cerrar sesión</a>
+            <a class="btn logout-btn" href="lista_docentes.php?close_session=true">cerrar sesión</a>
     </div>
     <div class="lista_docentes">
         <?php
