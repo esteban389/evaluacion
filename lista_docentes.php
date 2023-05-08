@@ -22,7 +22,7 @@ $lista_modulos= get_modulos();
 <body>
     <div>
         <?php 
-            user_info();
+            echo user_info();
             logout();
         ?>
         <a href="lista_docentes.php?close_session=true">cerrar sesión</a>
@@ -30,7 +30,7 @@ $lista_modulos= get_modulos();
     <div>
         <?php
         while($row = mysqli_fetch_array($lista_modulos)){
-            mostrar_lista_docentes($row);
+            echo mostrar_lista_docentes($row);
         }
         ?>
     </div>

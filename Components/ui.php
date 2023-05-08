@@ -13,6 +13,9 @@ function mostrar_lista_docentes($row){
     ."<p>"
     . $row['Docente']
     ."</p>"
+    ."<p>"
+    . $row['Modulo']
+    ."</p>"
     ."</a>";
 }
 ?>
