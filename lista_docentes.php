@@ -24,7 +24,7 @@ $modulos = get_modulos();
     <a href="lista_docentes.php?close_session=true">cerrar sesión</a>
     <?php
         while($modulos){
-            echo "<a href=\"evaluar_docente?id=\"". $modulos['id'] . ">" . $modulos['Docente']. "</a>";
+            echo "<a>" . $modulos['Docente']. "</a>";
         }    
     ?>
     
