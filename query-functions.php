@@ -26,8 +26,8 @@
     }
 
     function get_modulos(){
-        return   mysqli_fetch_array(mysqli_query($GLOBALS['db'],
+        return  mysqli_query($GLOBALS['db'],
         "SELECT* 
-        FROM Modulo"));
+        FROM Modulo");
     }
 ?>
