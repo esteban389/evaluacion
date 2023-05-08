@@ -25,7 +25,9 @@ include 'query-functions.php';
     echo gettype(get_modulos());
     $lista_modulos= get_modulos();
     echo gettype($lista_modulos);
-            echo "<a>" . get_modulos()['Docente']. "</a>";
+    for($i=0; $i<sizeof($lista_modulos);$i++){
+        echo "<a>" . get_modulos()['Docente']. "</a>";
+    }
     ?>
     
 </body>

@@ -14,7 +14,17 @@
             header("location: lista_docentes.php");
         }
     }
-
+    function auto_login($user){
+        $LOG_IN_QUERY_RESULT = mysqli_query($GLOBALS['db'],
+        "SELECT cc,nombre 
+        FROM Estudiantes 
+        WHERE cc = $user");
+        if(mysqli_num_rows($LOG_IN_QUERY_RESULT)){
+            session_start();
+            $_SESSION['user'] = mysqli_fetch_array($LOG_IN_QUERY_RESULT);
+            header("location: lista_docentes.php");
+        }
+    }
     function logout(){
         if(isset($_GET['close_session'])){
             unset($_COOKIE['lgin']);

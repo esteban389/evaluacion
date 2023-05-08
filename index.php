@@ -3,6 +3,9 @@
     include 'Components/Input.php';
     include 'query-functions.php';
     if(isset($_COOKIE['login'])){
+        if(isset($_SESSION['user'])){
+            auto_login($_COOKIE['login']);
+        }
         header("location: lista_docentes.php");
     }
 ?>
