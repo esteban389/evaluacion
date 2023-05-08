@@ -100,6 +100,7 @@
 }
 * {
   margin: 0;
+  text-decoration: none;
 }
 html, body {
   height: 100%;
@@ -198,4 +199,16 @@ color: rgb(var(--on-primary));
 }
 .user-name{
 	text-transform: uppercase;
+}
+.lista_docentes{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	color: black;
+}
+
+.infor_usuarios{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
 }

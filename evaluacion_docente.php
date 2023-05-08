@@ -14,6 +14,7 @@ $docente = mysqli_fetch_array(get_docente($_GET['id']));
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
     <link rel="icon" href="static/favicon.ico">
     <title>Evaluar el docente</title>
 </head>

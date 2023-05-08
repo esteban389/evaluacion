@@ -17,17 +17,18 @@ $lista_modulos= get_modulos();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="static/favicon.ico">
+    <link href="style.css" rel="stylesheet">
     <title>Seleccionar docente</title>
 </head>
 <body>
-    <div>
+    <div class="info_usuario">
         <?php 
             echo user_info();
             logout();
-        ?>
-        <a href="lista_docentes.php?close_session=true">cerrar sesión</a>
+            ?>
+            <a href="lista_docentes.php?close_session=true">cerrar sesión</a>
     </div>
-    <div>
+    <div class="lista_docentes">
         <?php
         while($row = mysqli_fetch_array($lista_modulos)){
             echo mostrar_lista_docentes($row);
