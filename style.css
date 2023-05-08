@@ -211,11 +211,11 @@ color: rgb(var(--on-primary));
 	flex-direction: row;
 	gap: 10%;
 }
-.lista_docentes>p{
+.lista_docentes p{
 	width: 100%;
 	color: black;
 }
-.info_usuarios{
+.info_usuario{
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
