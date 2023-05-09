@@ -34,7 +34,7 @@
          FROM Resultados 
          WHERE id_pregunta = 1");
          while($row = mysqli_fetch_array($resultado)){
-            echo $row,
+            echo $row;
          }
          ?>
         <input type="submit" class="btn login-btn" name="log-in" value="Iniciar sesión">
