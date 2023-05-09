@@ -33,7 +33,7 @@
          "SELECT resultado
          FROM Resultados 
          WHERE id_pregunta = 1");
-         while($row = mysqli_fetch_array($resultado)){
+         while($row = mysqli_fetch_array($resultados)){
             echo $row;
          }
          ?>
