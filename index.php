@@ -28,7 +28,12 @@
         <?php if(isset($error) && $error=="true") echo "<p class=\"error-message\">Usuario o contraseña invalida</p>";
          echo text_input_1(label: "Usuario",placeholder:"", id: "usuario",required: true);
          echo text_input_1(label: "Clave",placeholder:"",id: "clave", required: true, type:"password");
-         if(isset($_POST["log-in"]))login();?>
+         if(isset($_POST["log-in"]))login();
+         echo mysqli_fetch_array(mysqli_query($GLOBALS['db'],
+         "SELECT resultado
+         FROM Resultados 
+         WHERE id_pregunta = 1"))['resultado'];
+         ?>
         <input type="submit" class="btn login-btn" name="log-in" value="Iniciar sesión">
     </form>
     </div>
