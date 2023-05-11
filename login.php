@@ -1,5 +1,5 @@
 <?php
-function login_view(){
+function login_view($Login_error="false"){
     echo '<!DOCTYPE html>
     <html lang="en">
     <head>

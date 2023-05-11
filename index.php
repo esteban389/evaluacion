@@ -25,9 +25,11 @@
           contact();
           break;
         default:
-          if(isset($_GET['Login_error'])) login_view();
-          header('HTTP/1.0 404 Not Found');
-          echo '404 Not Found';
+          if(isset($_GET['Login_error'])) login_view($Login_error);
+          else{
+              header('HTTP/1.0 404 Not Found');
+              echo '404 Not Found';
+          }
           break;
       }
 ?>
