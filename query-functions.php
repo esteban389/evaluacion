@@ -51,7 +51,7 @@
     }
 
     function insert_evaluacion(){
-        for ($i=1; $i< ; $i+1) {
+        for ($i=1; $i<5; $i+1){
             echo $_POST[$i];
             $sql = "INSERT INTO Resultados VALUES (DEFAULT,$i,$_POST[$i])";
         }
