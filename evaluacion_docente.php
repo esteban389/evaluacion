@@ -28,7 +28,7 @@ $docente = mysqli_fetch_array(get_docente($_GET['id']));
             ?>
             <a class="btn logout-btn" href="lista_docentes.php?close_session=true">salir</a>
     </div>
-    <form class="lista_preguntas">
+    <form class="lista_preguntas" method="POST">
         <div>       
             <p>
                 El docente mantiene el liderazgo durante la clase
