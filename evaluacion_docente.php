@@ -27,7 +27,7 @@ $docente = mysqli_fetch_array(get_docente($_GET['id']));
             ?>
             <a class="btn logout-btn" href="lista_docentes.php?close_session=true">salir</a>
     </div>
-    <div class="lista_preguntas">
+    <form class="lista_preguntas">
         <div>       
             <p>
                 El docente mantiene el liderazgo durante la clase
@@ -90,7 +90,7 @@ $docente = mysqli_fetch_array(get_docente($_GET['id']));
         </div> 
         <label for="">Observaciones</label>
         <textarea name="observaciones" id="" cols="30" rows="10"></textarea>
-        <a class="btn login-btn" href="lista_docentes.php">Enviar</a>
-    </div>
+        <input type="submit" class="btn login-btn" href="lista_docentes.php">Enviar</a>
+    </form>
 </body>
 </html>
