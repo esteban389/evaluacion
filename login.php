@@ -15,7 +15,7 @@ function login_view(){
         <form method="POST" class="login-form">
             <img src="static/Escudo_de_la_Universidad_Libre_de_Colombia.svg.png" alt="Escudo de la Universidad Libre de Colombia">';
     
-            if(isset($error) && $error=="true") echo "<p class=\"error-message\">Usuario o contraseña invalida</p>";
+            if(isset($Login_error) && $Login_error=="true") echo "<p class=\"error-message\">Usuario o contraseña invalida</p>";
              echo text_input_1(label: "Usuario",placeholder:"", id: "usuario",required: true);
              echo text_input_1(label: "Clave",placeholder:"",id: "clave", required: true, type:"password");
              if(isset($_POST["log-in"]))login();

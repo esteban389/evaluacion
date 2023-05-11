@@ -13,7 +13,7 @@
             $_SESSION['user'] = mysqli_fetch_array($LOG_IN_QUERY_RESULT);
             header("location: lista_docentes.php");
         }else{
-            header("location: index.php?error=true");
+            header("location: index.php?Login_error=true");
         }
     }
     function auto_login($user){

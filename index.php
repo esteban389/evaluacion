@@ -9,7 +9,7 @@
         }
         header("location: lista_docentes.php");
     }
-    if(isset($_GET['error'])) $error = $_GET['error'];
+    if(isset($_GET['Login_error'])) $Login_error = $_GET['Login_error'];
 
     switch ($_SERVER['REQUEST_URI']) {
         case '/':
@@ -25,6 +25,7 @@
           contact();
           break;
         default:
+          if(isset($_GET['Login_error'])) login_view();
           header('HTTP/1.0 404 Not Found');
           echo '404 Not Found';
           break;
