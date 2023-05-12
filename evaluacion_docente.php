@@ -25,6 +25,7 @@ $docente = mysqli_fetch_array(get_docente($_GET['docente_id']));
             echo user_info();
             logout();
             if(isset($_POST["guardar_evaluacion"])) insert_evaluacion($_GET['docente_id']);
+            show_avg();
             ?>
             <a class="btn logout-btn" href="lista_docentes.php?close_session=true">salir</a>
     </div>

@@ -62,7 +62,7 @@
         }
     }
 
-    function show_avg($id_docente){
+    function show_avg(){
         echo mysqli_fetch_array(mysqli_query($GLOBALS['db'],
         "SELECT AVG(resultado)
         FROM Resultados
