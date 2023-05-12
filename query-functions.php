@@ -51,8 +51,8 @@
     }
 
     function insert_evaluacion($id_docente){
-        $sql = "INSERT INTO Resultados VALUES (DEFAULT,$i,$id_docente,$_POST['observaciones'])";
-        mysqli_query($GLOBALS['db'],$sql);
+        $observaciones = "INSERT INTO Resultados VALUES (DEFAULT,$i,$id_docente,$_POST['observaciones'])";
+        mysqli_query($GLOBALS['db'],$observaciones);
         for ($i=1; $i<7; $i++){
             $pregunta = "pregunta".$i;
             $sql = "INSERT INTO Resultados VALUES (DEFAULT,$i,$id_docente,$_POST[$pregunta])";
