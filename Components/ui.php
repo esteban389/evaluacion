@@ -9,7 +9,7 @@ function user_info(){
 }
 
 function mostrar_lista_docentes($row){
-    return "<a href=\"evaluacion_docente.php?id=" . $row['id'] . "\">"
+    return "<a href=\"evaluacion_docente.php?docente_id=" . $row['id'] . "\">"
     ."<p>"
     . $row['Docente']
     ."</p>"

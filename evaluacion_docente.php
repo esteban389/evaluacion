@@ -7,7 +7,7 @@ if(!$_SESSION["user"] || empty($_SESSION["user"])){
 }
 include 'query-functions.php';
 include 'Components/ui.php';
-$docente = mysqli_fetch_array(get_docente($_GET['id']));
+$docente = mysqli_fetch_array(get_docente($_GET['docente_id']));
 ?>
 <!DOCTYPE html>
 <html lang="en">

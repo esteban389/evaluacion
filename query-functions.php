@@ -54,7 +54,7 @@
         for ($i=1; $i<6; $i+1){
             $pregunta = "pregunta".$i;
             if($i==6) $pregunta = "observaciones";
-            $sql = "INSERT INTO Resultados VALUES (DEFAULT,$i,$_POST[$pregunta])";
+            $sql = "INSERT INTO Resultados VALUES (DEFAULT,$i,$_GET['docente_id'],$_POST[$pregunta])";
             mysqli_query($GLOBALS['db'],$sql);
             header("location: lista_docentes.php");
         }
