@@ -62,10 +62,10 @@
         }
     }
 
-    function show_avg(){
+    function show_avg($id_pregunta,$id_modulo){
         echo mysqli_fetch_array(mysqli_query($GLOBALS['db'],
         "SELECT AVG(resultado) AS promedio
         FROM Resultados
-        WHERE id_pregunta=\"1\" AND id_modulo=\"5\""))[0];
+        WHERE id_pregunta=\"$id_pregunta\" AND id_modulo=\"$id_modulo\""))[0];
     }
 ?>
