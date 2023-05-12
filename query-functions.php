@@ -50,7 +50,7 @@
         WHERE id=$id_docente");
     }
 
-    function insert_evaluacion(){
+    function insert_evaluacion($id_docente){
         for ($i=1; $i<6; $i+1){
             if($i==6) {
                 $pregunta = "observaciones";
