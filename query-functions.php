@@ -51,10 +51,11 @@
     }
 
     function insert_evaluacion(){
-        for ($i=1; $i<5; $i+1){
+        for ($i=1; $i<6; $i+1){
             $pregunta = "pregunta".$i;
-            echo $pregunta ." : ". $_POST[$pregunta];
+            if($i==6) $pregunta = "observaciones";
             $sql = "INSERT INTO Resultados VALUES (DEFAULT,$i,$_POST[$pregunta])";
+            mysqli_query($GLOBALS['db'],$sql);
             header("location: lista_docentes.php");
         }
 
