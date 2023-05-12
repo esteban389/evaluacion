@@ -33,7 +33,7 @@ $docente = mysqli_fetch_array(get_docente($_GET['id']));
             <p>
                 El docente mantiene el liderazgo durante la clase
             </p>
-            <select name="1" id="1">
+            <select name="pregunta1" id="1">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -45,7 +45,7 @@ $docente = mysqli_fetch_array(get_docente($_GET['id']));
             <p>
                 El docente muestra respeto por los demás
             </p>
-            <select name="2" id="2">
+            <select name="pregunta2" id="2">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -57,7 +57,7 @@ $docente = mysqli_fetch_array(get_docente($_GET['id']));
             <p>
                 El docente facilita diversas dinámicas para la clase
             </p>
-            <select name="3" id="3">
+            <select name="pregunta3" id="3">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -69,7 +69,7 @@ $docente = mysqli_fetch_array(get_docente($_GET['id']));
             <p>
                 El docente despierta la motivación
             </p>
-            <select name="4" id="4">
+            <select name="pregunta4" id="4">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -81,7 +81,7 @@ $docente = mysqli_fetch_array(get_docente($_GET['id']));
             <p>
                 Fueron cumplidos los objetivos de aprendizaje
             </p>
-            <select name="5" id="5">
+            <select name="pregunta5" id="5">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>

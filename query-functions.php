@@ -47,12 +47,12 @@
         return  mysqli_query($GLOBALS['db'],
         "SELECT* 
         FROM Modulo
-        WHERE id=$id_docente");
+        WHERE id=$id_docente");a
     }
 
     function insert_evaluacion(){
         for ($i=1; $i<5; $i+1){
-            $sql = "INSERT INTO Resultados VALUES (DEFAULT,$i,$_POST['$i'])";
+            $sql = "INSERT INTO Resultados VALUES (DEFAULT,$i,$_POST['pregunta'.$i])";
         }
 
     }
