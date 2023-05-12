@@ -51,7 +51,7 @@
     }
 
     function insert_evaluacion($id_docente){
-        for ($i=1; $i<7; $i+1){
+        for ($i=1; $i<7; $i++){
             if($i==6) {
                 $pregunta = "observaciones";
             }else{
