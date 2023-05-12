@@ -57,7 +57,7 @@
             }else{
                 $pregunta = "pregunta".$i;
             }
-            echo $pregunta;
+            echo $i;
             //$sql = "INSERT INTO Resultados VALUES (DEFAULT,$i,$id_docente,$_POST[$pregunta])";
             //mysqli_query($GLOBALS['db'],$sql);
             //header("location: lista_docentes.php");
