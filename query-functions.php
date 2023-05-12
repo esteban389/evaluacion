@@ -51,16 +51,16 @@
     }
 
     function insert_evaluacion($id_docente){
-        for ($i=1; $i<6; $i+1){
+        for ($i=1; $i<7; $i+1){
             if($i==6) {
                 $pregunta = "observaciones";
             }else{
                 $pregunta = "pregunta".$i;
             }
-            echo $i;
             //$sql = "INSERT INTO Resultados VALUES (DEFAULT,$i,$id_docente,$_POST[$pregunta])";
             //mysqli_query($GLOBALS['db'],$sql);
             //header("location: lista_docentes.php");
         }
+        echo $i;
     }
 ?>
