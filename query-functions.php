@@ -61,4 +61,11 @@
             header("location: lista_docentes.php");
         }
     }
+
+    function show_avg($id_docente){
+        echo mysqli_fetch_array(mysqli_query($GLOBALS['db'],
+        "SELECT AVG(resultado)
+        FROM Resultados
+        WHERE id_pregunta=\"1\" AND id_modulo=\"5\""));
+    }
 ?>
