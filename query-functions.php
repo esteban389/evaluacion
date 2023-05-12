@@ -53,6 +53,7 @@
     function insert_evaluacion(){
         for ($i=1; $i<5; $i+1){
             $pregunta = "pregunta".$i;
+            echo $pregunta ." : ". $_POST[$pregunta];
             $sql = "INSERT INTO Resultados VALUES (DEFAULT,$i,$_POST[$pregunta])";
             header("location: lista_docentes.php");
         }
