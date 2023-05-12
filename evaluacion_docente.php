@@ -25,7 +25,7 @@ $docente = mysqli_fetch_array(get_docente($_GET['docente_id']));
             echo user_info();
             logout();
             if(isset($_POST["guardar_evaluacion"])) insert_evaluacion($_GET['docente_id']);
-            echo "<br>"
+            echo "<br>";
             for ($i=0; $i < 5; $i++) { 
                 echo "Pregunta N°".$i.": ";
                 show_avg($i,$_GET['docente_id']);
