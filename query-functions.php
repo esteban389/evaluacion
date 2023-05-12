@@ -29,7 +29,7 @@
     }
     function logout(){
         if(isset($_GET['close_session'])){
-            unset($_COOKIE['lgin']);
+            unset($_COOKIE['login']);
             setcookie('login', '', time() - 3600, '/');
             session_destroy();
             header("location: index.php");
@@ -57,10 +57,10 @@
             }else{
                 $pregunta = "pregunta".$i;
             }
-            $sql = "INSERT INTO Resultados VALUES (DEFAULT,$i,$id_docente,$_POST[$pregunta])";
-            mysqli_query($GLOBALS['db'],$sql);
-            header("location: lista_docentes.php");
+            echo $pregunta;
+            //$sql = "INSERT INTO Resultados VALUES (DEFAULT,$i,$id_docente,$_POST[$pregunta])";
+            //mysqli_query($GLOBALS['db'],$sql);
+            //header("location: lista_docentes.php");
         }
-
     }
 ?>
