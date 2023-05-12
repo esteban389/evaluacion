@@ -54,6 +54,7 @@
         for ($i=1; $i<5; $i+1){
             $pregunta = "pregunta".$i;
             $sql = "INSERT INTO Resultados VALUES (DEFAULT,$i,$_POST[$pregunta])";
+            header("location: lista_docente.php")
         }
 
     }
