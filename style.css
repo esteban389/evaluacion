@@ -152,7 +152,7 @@ margin-top: 5%;
 	--tw-brightness: brightness(1.45);
 	filter: var(--tw-brightness);
 	transform: translate(0, -3px);
-	box-shadow: 0 20px 80px -10px rgb(var(--color-surface-500) / var(--tw-bg-opacity));
+	box-shadow: 0 20px 80px -10px rgb(var(--color-primary-500));
 }
 .text_input_1{
   display: flex;
