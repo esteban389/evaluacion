@@ -2,7 +2,7 @@
     ob_start();
     include 'Components/Input.php';
     include 'query-functions.php';
-    include 'login.php';
+    include 'Routes/login.php';
     if(isset($_COOKIE['login'])){
         if(!isset($_SESSION['user'])){
             auto_login($_COOKIE['login']);
