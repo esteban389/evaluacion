@@ -47,7 +47,7 @@
         return  mysqli_query($GLOBALS['db'],
         "SELECT* 
         FROM Modulo
-        WHERE id=$id_docente");a
+        WHERE id=$id_docente");
     }
 
     function insert_evaluacion(){
