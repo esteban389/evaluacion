@@ -90,7 +90,7 @@ $docente = mysqli_fetch_array(get_docente($_GET['docente_id']));
             </select>
         </div> 
         <label for="">Observaciones</label>
-        <textarea name="observaciones" id="" cols="30" rows="10"></textarea>
+        <textarea name="observaciones" id="observaciones" cols="30" rows="10"></textarea>
         <input type="submit" class="btn login-btn" name="guardar_evaluacion" value="Enviar">
     </form>
 </body>

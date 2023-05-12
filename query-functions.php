@@ -53,11 +53,11 @@
     function insert_evaluacion($id_docente){
         for ($i=1; $i<7; $i++){
             if($i==6){
-                $pregunta = "observaciones";
+                $sql = "INSERT INTO Resultados VALUES (DEFAULT,$i,$id_docente,$_POST['observaciones'])";
             }else{
                 $pregunta = "pregunta".$i;
+                $sql = "INSERT INTO Resultados VALUES (DEFAULT,$i,$id_docente,$_POST[$pregunta])";
             }
-            $sql = "INSERT INTO Resultados VALUES (DEFAULT,$i,$id_docente,$_POST[$pregunta])";
             mysqli_query($GLOBALS['db'],$sql);
             header("location: lista_docentes.php");
         }
