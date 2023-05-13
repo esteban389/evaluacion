@@ -198,56 +198,58 @@ margin-top: 5%;
 }
 .user-name{
 	text-transform: uppercase;
+	color: rgb(var(--on-primary))
 }
-.lista_docentes{
+.lista{
 	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
-	padding-inline: 5%;
-	background-color: rgb(var(--color-tertiary-700));
+	margin-inline: 5%;
+	background-color: rgb(var(--color-surface-900));
+	padding: 5px;
 }
-.lista_docentes p{
+.lista p{
 	width: 100%;
 	color: black;
 }
-.lista_docentes>a{
+.desactivado{
+	background: rgb(var(--color-surface-300));
+}
+.desactivado p{
+	color: rgb(var(--color-surface-600));
+}
+.lista>a{
 	display: flex;
 	flex-direction: row;
+	padding: 10px;
+	background: rgb(var(--color-tertiary-300));
 }
+
 .info_usuario{
 	display: flex;
-	flex-direction: column;
-	gap: 5px;
+	flex-direction: row;
+	justify-content: space-between;
 	align-items: center;
+
+	background: linear-gradient(90deg,
+	rgb(var(--color-primary-500)),
+	rgb(var(--color-primary-800)),
+	rgb(var(--color-primary-500)));
+	padding: 15px;
 }
 
 .logout-btn{
 	--tw-bg-opacity: 1;
 background-color: rgb(var(--color-tertiary-500) / var(--tw-bg-opacity));
 color: rgb(var(--on-primary));
-position: absolute;
-top: 1%;
-right: 2%;
-}
-.logout-btn:hover{
-	--tw-brightness: brightness(1.45);
-	filter: var(--tw-brightness);
-	box-shadow: 0px 4px 28px rgb(var(--color-surface-500) / var(--tw-bg-opacity));
 }
 
-.lista_preguntas{
-	margin-top: 20px;
-	display: flex;
-	flex-direction: column;
-	gap: 5px;
-	padding: 5%;
-	background-color: rgb(var(--color-tertiary-700));
-}
-.lista_preguntas>div{
-	display: flex;
-	flex-direction: row;
-}
-.lista_preguntas p{
-	color: black;
+.warning{
+	background: rgb(var(--color-warning-500));
+	padding-inline: 5px;
+color: rgb(var(--on-warning));
+text-align: center;
+text-transform: uppercase;
+font-size: 1.5rem;
 }

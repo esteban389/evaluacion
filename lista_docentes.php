@@ -22,16 +22,20 @@ $lista_modulos= get_modulos();
 </head>
 <body>
     <div class="info_usuario">
-        <?php 
+        <?php
             echo user_info();
             logout();
             ?>
-            <a class="btn logout-btn" href="lista_docentes.php?close_session=true">salir</a>
+        <a class="btn logout-btn" href="lista.php?close_session=true">salir</a>
     </div>
-    <div class="lista_docentes">
+    <h1 class="warning">
+        Advertencia: !tienes docentes pendientes por evaluar!
+    </h1>
+    <div class="lista">
+        <h2 style="color: white;"> Nombre</h2>
         <?php
         while($row = mysqli_fetch_array($lista_modulos)){
-            echo mostrar_lista_docentes($row);
+            echo mostrar_lista($row);
         }
         ?>
     </div>

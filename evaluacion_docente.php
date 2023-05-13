@@ -21,17 +21,13 @@ $docente = mysqli_fetch_array(get_docente($_GET['docente_id']));
 </head>
 <body>
     <div class="info_usuario">
+        <a class="btn back-btn" href="lista_docentes.php">salir</a>
         <?php 
             echo user_info();
             logout();
             if(isset($_POST["guardar_evaluacion"])) insert_evaluacion($_GET['docente_id']);            
-            for ($i=1; $i < 6; $i++) { 
-                echo "<br>";
-                echo "Pregunta N°".$i.": ";
-                show_avg($i,$_GET['docente_id']);
-            }
-            ?>
-            <a class="btn logout-btn" href="lista_docentes.php?close_session=true">salir</a>
+        ?>
+        <a class="btn logout-btn" href="lista_docentes.php?close_session=true">salir</a>
     </div>
     <form class="lista_preguntas" method="POST">
         <div>       
