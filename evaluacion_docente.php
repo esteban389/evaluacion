@@ -33,8 +33,8 @@ $lista_preguntass= get_preguntas();
     <form class="lista" method="POST">
         <container>
             <?php
-                while($row = mysqli_fetch_array($lista_modulos)){
-                    echo mostrar_lista_docentes($row);
+                while($row = mysqli_fetch_array($lista_preguntas)){
+                    echo mostrar_preguntas($row);
                 }
             ?>
             <label for="">Observaciones</label>
