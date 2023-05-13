@@ -206,7 +206,7 @@ header img{
 	transition-duration: .15s;
 }
 header img:hover{
-	filter: drop-shadow(0 0 0.5rem white);
+	filter: invert(100%) drop-shadow(0 0 0.5rem white);
 }
 .user-name{
 	text-transform: uppercase;
