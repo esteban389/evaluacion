@@ -21,14 +21,14 @@ $lista_preguntas= get_preguntas();
     <title>Evaluar el docente</title>
 </head>
 <body>
-    <header class="info_usuario" style="justify-content:center;">
+    <header class="info_usuario">
         <a class="btn back-btn" href="lista_docentes.php"><img src="static/back_icon.png"></a>
         <?php 
             echo user_info();
             logout();
             if(isset($_POST["guardar_evaluacion"])) insert_evaluacion($_GET['docente_id']);            
         ?>
-        <a class="btn logout-btn" href="lista_docentes.php?close_session=true" style="position: fixed; left:1rem;">salir</a>
+        <a class="btn logout-btn" href="lista_docentes.php?close_session=true" >salir</a>
     </header>
     <container>
         <form class="lista" method="POST" style="padding: 20px;">

@@ -21,13 +21,13 @@ $lista_modulos= get_modulos();
     <title>Seleccionar docente</title>
 </head>
 <body>
-    <div class="info_usuario">
+    <header class="info_usuario" style="justify-content:center;">
         <?php
             echo user_info();
             logout();
             ?>
-        <a class="btn logout-btn" href="lista_docentes.php?close_session=true">salir</a>
-    </div>
+        <a class="btn logout-btn" href="lista_docentes.php?close_session=true" style="position: fixed; left:1rem;">salir</a>
+</header>
     <h1 class="warning">
         Advertencia: !tienes docentes pendientes por evaluar!
     </h1>

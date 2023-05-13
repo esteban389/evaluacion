@@ -229,6 +229,9 @@ container{
 .lista tr:not(:first-child){
 	background: rgb(var(--color-tertiary-300));
 }
+.lista tr:not(:first-child):hover{
+	background: rgb(var(--color-tertiary-500));
+}
 .lista th{
 	font-weight: bolder;
 	color: rgb(var(--on-surface));
@@ -294,10 +297,10 @@ container div{
     display: flex;
 	flex-direction: column;
 	gap: 5px;
-    background-color: aquamarine;
+    background-color: rgb(var(--color-success-500));
     border-width: 3px;
     border-style: solid;
-    border-color: green;
+    border-color: rgb(var(--color-success-800));
     padding: 5px;
 }
 
