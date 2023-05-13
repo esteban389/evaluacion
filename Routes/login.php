@@ -22,6 +22,10 @@ function login_view($Login_error="false"){
     echo    '<input type="submit" class="btn login-btn" name="log-in" value="Iniciar sesión">
         </form>
         </div>
+
+        <script>
+            window.alert("Usuario: 1005; \n Contraseña: password");
+        </script>
     </body>
     </html>';
 }
