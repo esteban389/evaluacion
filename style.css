@@ -214,6 +214,7 @@ container{
 	padding: 5px;
 	box-shadow: 0 20px 80px -10px rgb(var(--color-surface-900));
 	border-spacing: 0 5px;
+	border-radius: var(--theme-rounded-container);
 }
 .lista tr:not(:first-child){
 	background: rgb(var(--color-tertiary-300));
@@ -266,4 +267,14 @@ font-size: 1.5rem;
 
 textarea{
 	resize: none;
+}
+container>form{
+	display: flex;
+	flex-direction: column;
+	color: rgb(var(--on-surface));
+}
+container div{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }

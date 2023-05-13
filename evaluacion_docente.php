@@ -31,7 +31,7 @@ $lista_preguntas= get_preguntas();
         <a class="btn logout-btn" href="lista_docentes.php?close_session=true">salir</a>
     </div>
     <container>
-        <form class="lista" method="POST">
+        <form class="lista" method="POST" style="padding: 20px;">
             <?php
                 while($row = mysqli_fetch_array($lista_preguntas)){
                     echo mostrar_preguntas($row);

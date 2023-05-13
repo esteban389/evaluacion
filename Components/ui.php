@@ -23,7 +23,7 @@ function mostrar_lista_docentes($row){
                     "</a>
                 </td>
                 <td>
-                    <a href=\"evaluacion_docente.php?docente_id=". $link . "\">"
+                    <a href=\"". $link . "\">"
                         . $row['Modulo'] .
                     "</a>
                 </td>
@@ -33,9 +33,9 @@ function mostrar_lista_docentes($row){
 function mostrar_preguntas($row){
     return 
         "<div>
-            <p>
-                El docente mantiene el liderazgo durante la clase
-            </p>
+            <p>".
+                $row['descripcion']
+            ."</p>
             <select name=\"pregunta".$row['id']."\" id=\"".$row['id']."\">
                 <option value=\"1\">1</option>
                 <option value=\"2\">2</option>
