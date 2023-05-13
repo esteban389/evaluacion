@@ -31,14 +31,19 @@ $lista_modulos= get_modulos();
     <h1 class="warning">
         Advertencia: !tienes docentes pendientes por evaluar!
     </h1>
-    <div class="lista">
-        <h2 style="color: white;"> Nombre</h2>
-        <?php
-        while($row = mysqli_fetch_array($lista_modulos)){
-            echo mostrar_lista_docentes($row);
-        }
-        ?>
-    </div>
+    <container>
+        <table class="lista">
+            <tr>
+                <th><h2>Nombre</h2></th>
+                <th><h2>Modulo</h2></th>
+            </tr>
+            <?php
+            while($row = mysqli_fetch_array($lista_modulos)){
+                echo mostrar_lista_docentes($row);
+            }
+            ?>
+        </table>
+    </container>
     
 </body>
 </html>

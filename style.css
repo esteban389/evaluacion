@@ -201,32 +201,39 @@ margin-top: 5%;
 .user-name{
 	text-transform: uppercase;
 	color: rgb(var(--on-primary))
+}container{
+	display: block;
+	width: 100%;
+	padding-inline: 5%;
 }
 .lista{
 	margin-top: 20px;
-	display: flex;
-	flex-direction: column;
-	gap: 5px;
-	margin-inline: 5%;
+	width: 100%;
 	background-color: rgb(var(--color-surface-900));
 	padding: 5px;
 	box-shadow: 0 20px 80px -10px rgb(var(--color-surface-900));
+
+	border-spacing: 0 5px;
 }
-.lista p{
-	width: 100%;
-	color: black;
-}
-.desactivado{
-	background: rgb(var(--color-surface-300));
-}
-.desactivado p{
-	color: rgb(var(--color-surface-600));
-}
-.lista>a{
-	display: flex;
-	flex-direction: row;
-	padding: 10px;
+.lista tr:not(:first-child){
 	background: rgb(var(--color-tertiary-300));
+}
+.lista th{
+	font-weight: bolder;
+	color: rgb(var(--on-surface));
+	text-align: left;
+}
+.lista a { 
+	display: block; 
+	padding: 10px; 
+	color: rgb(var(--on-tertiary));
+ }
+.desactivado{
+	background-color: rgb(var(--color-surface-300)) !important;
+}
+.desactivado a{
+	color: rgb(var(--color-surface-600));
+	cursor: default;
 }
 
 .info_usuario{
