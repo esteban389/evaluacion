@@ -26,7 +26,7 @@ $lista_modulos= get_modulos();
             echo user_info();
             logout();
             ?>
-        <a class="btn logout-btn" href="lista_docentes.php?close_session=true" style="position: fixed; left:1rem;">salir</a>
+        <a class="btn logout-btn" href="lista_docentes.php?close_session=true" style="position: fixed; right:1rem;">salir</a>
 </header>
     <h1 class="warning">
         Advertencia: !tienes docentes pendientes por evaluar!
