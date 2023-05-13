@@ -30,8 +30,8 @@ $lista_preguntas= get_preguntas();
         ?>
         <a class="btn logout-btn" href="lista_docentes.php?close_session=true">salir</a>
     </div>
-    <form class="lista" method="POST">
-        <container>
+    <container>
+        <form class="lista" method="POST">
             <?php
                 while($row = mysqli_fetch_array($lista_preguntas)){
                     echo mostrar_preguntas($row);
@@ -40,7 +40,7 @@ $lista_preguntas= get_preguntas();
             <label for="">Observaciones</label>
             <textarea name="observaciones" id="observaciones" cols="30" rows="10"></textarea>
             <input type="submit" class="btn login-btn" name="guardar_evaluacion" value="Enviar">
-        </container>   
-    </form>
+        </form>
+    </container>   
 </body>
 </html>
