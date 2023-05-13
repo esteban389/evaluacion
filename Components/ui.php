@@ -9,11 +9,10 @@ function user_info(){
 }
 
 function mostrar_lista_docentes($row){
-    if($row['Estado']==1) $estado="class=\"desactivado\">";
-    else $estado ="";
+    if($row['Estado']==1) $estado="desactivado";
     return "
-    <tr ". $estado.
-                "<td>
+    <tr class=\"". $estado."\">
+                <td>
                     <a href=\"evaluacion_docente.php?docente_id=\"". $row['id'] . "\">"
                         . $row['Docente'] .
                     "</a>
