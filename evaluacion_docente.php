@@ -57,7 +57,7 @@ $lista_preguntas= get_preguntas();
                 for($i=1;$i<6;$i++){
                     echo "i= ".$i ."  GET= ". $_GET['docente_id'];
                     $avg = mysqli_fetch_array(show_avg($i,$_GET['docente_id']));
-                    echo "AVG ID=".$avg['id']." AVG RESULTADO=".$avg['resultado'];
+                    echo "AVG ID=".$avg[0]." AVG RESULTADO=".$avg[1];
                 }
             ?>
         </div>
