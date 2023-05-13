@@ -206,7 +206,7 @@ header img{
 	transition-duration: .15s;
 }
 header img:hover{
-	filter: drop-shadow(0 0 0.5rem black);
+	filter: drop-shadow(0 0 0.5rem white);
 }
 .user-name{
 	text-transform: uppercase;
@@ -288,4 +288,21 @@ container div{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
+
+.resultados_docente{
+    display: flex;
+	flex-direction: column;
+	gap: 5px;
+    background-color: aquamarine;
+    border-width: 3px;
+    border-style: solid;
+    border-color: green;
+    padding: 5px;
+}
+
+.resultados_docente div{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }

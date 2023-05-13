@@ -45,4 +45,15 @@ function mostrar_preguntas($row){
             </select>
         </div>";
 }
+
+function mostrar_avg($avg){
+    return "<div>
+                <h3> Pregunta "
+                    . $avg['id_pregunta'].
+                "</h3>
+                <h3>"
+                    . $avg['resultado'].   
+                "</h3>
+            </div>";
+}
 ?>

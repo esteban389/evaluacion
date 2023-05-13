@@ -21,14 +21,14 @@ $lista_preguntas= get_preguntas();
     <title>Evaluar el docente</title>
 </head>
 <body>
-    <header class="info_usuario">
+    <header class="info_usuario" style="justify-content:center;">
         <a class="btn back-btn" href="lista_docentes.php"><img src="static/back_icon.png"></a>
         <?php 
             echo user_info();
             logout();
             if(isset($_POST["guardar_evaluacion"])) insert_evaluacion($_GET['docente_id']);            
         ?>
-        <a class="btn logout-btn" href="lista_docentes.php?close_session=true">salir</a>
+        <a class="btn logout-btn" href="lista_docentes.php?close_session=true" style="position: fixed; left:1rem;">salir</a>
     </header>
     <container>
         <form class="lista" method="POST" style="padding: 20px;">
@@ -41,6 +41,24 @@ $lista_preguntas= get_preguntas();
             <textarea name="observaciones" id="observaciones" cols="30" rows="10"></textarea>
             <input type="submit" class="btn login-btn" name="guardar_evaluacion" value="Enviar">
         </form>
+    </container>
+
+    <container style="margin-top: 30px; margin-inline:15%">
+        <div class="resultados_docente">
+            <div>
+                <h2>
+                    Pregunta
+                </h2>
+                <h2>
+                    Promedio
+                </h2>
+            </div>
+            <?php
+                for($i=1;$i<6;$i++){
+                    $avg = mysqli_fetch_array(show_avg($i,$_GET['docente_id']));
+                }
+            ?>
+        </div>
     </container>
 </body>
 </html>
