@@ -21,7 +21,7 @@ $lista_preguntas= get_preguntas();
     <title>Evaluar el docente</title>
 </head>
 <body>
-    <div class="info_usuario">
+    <header class="info_usuario">
         <a class="btn back-btn" href="lista_docentes.php"><img src="static/back_icon.png"></a>
         <?php 
             echo user_info();
@@ -29,7 +29,7 @@ $lista_preguntas= get_preguntas();
             if(isset($_POST["guardar_evaluacion"])) insert_evaluacion($_GET['docente_id']);            
         ?>
         <a class="btn logout-btn" href="lista_docentes.php?close_session=true">salir</a>
-    </div>
+    </header>
     <container>
         <form class="lista" method="POST" style="padding: 20px;">
             <?php
@@ -41,6 +41,6 @@ $lista_preguntas= get_preguntas();
             <textarea name="observaciones" id="observaciones" cols="30" rows="10"></textarea>
             <input type="submit" class="btn login-btn" name="guardar_evaluacion" value="Enviar">
         </form>
-    </container>   
+    </container>
 </body>
 </html>

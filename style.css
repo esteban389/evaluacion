@@ -144,11 +144,11 @@ p, h1, h2, h3, h4, h5, h6,label,input {
 	border-radius: var(--theme-rounded-base);
 }
 .login-btn{
-	border: 1px;
 	--tw-bg-opacity: 1;
-background-color: rgb(var(--color-primary-500) / var(--tw-bg-opacity));
-color: rgb(var(--on-primary));
-margin-top: 5%;
+	background-color: rgb(var(--color-primary-500) / var(--tw-bg-opacity));
+	color: rgb(var(--on-primary));
+	margin-top: 5%;
+	border: 1px;
 }
 .login-btn:hover{
 	--tw-brightness: brightness(1.45);
@@ -197,6 +197,16 @@ margin-top: 5%;
 	color: rgb(var(--color-error-500));
     margin-top: -10px;
     margin-bottom: 10px;
+}
+header img{
+	filter: invert(100%);
+	width: 2rem;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(.4,0,.2,1);
+	transition-duration: .15s;
+}
+header img:hover{
+	filter: drop-shadow(0 0 0.5rem black);
 }
 .user-name{
 	text-transform: uppercase;
