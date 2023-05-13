@@ -52,7 +52,7 @@ function mostrar_avg($pregunta,$avg){
                     . $pregunta.
                 "</h3>
                 <h3>"
-                    . $avg['resultado'].   
+                    . "x".   
                 "</h3>
             </div>";
 }
