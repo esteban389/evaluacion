@@ -15,15 +15,16 @@ function mostrar_lista_docentes($row){
         $estado="desactivado";
         $link = "#";
     }
+    echo $link;
     return "
     <tr class=\"". $estado."\">
                 <td>
-                    <a href=\"evaluacion_docente.php?docente_id=\"". $link . "\">"
+                    <a href=\"evaluacion_docente.php?docente_id=". $link . "\">"
                         . $row['Docente'] .
                     "</a>
                 </td>
                 <td>
-                    <a href=\"evaluacion_docente.php?docente_id=\"". $link . "\">"
+                    <a href=\"evaluacion_docente.php?docente_id=". $link . "\">"
                         . $row['Modulo'] .
                     "</a>
                 </td>
