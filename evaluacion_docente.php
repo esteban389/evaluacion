@@ -22,7 +22,7 @@ $lista_preguntas= get_preguntas();
 </head>
 <body>
     <div class="info_usuario">
-        <a class="btn back-btn" href="lista_docentes.php"><</a>
+        <a class="btn back-btn" href="lista_docentes.php"><img src="static/back_icon.png"></a>
         <?php 
             echo user_info();
             logout();

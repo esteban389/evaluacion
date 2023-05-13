@@ -144,7 +144,7 @@ p, h1, h2, h3, h4, h5, h6,label,input {
 	border-radius: var(--theme-rounded-base);
 }
 .login-btn{
-	
+	border: 1px;
 	--tw-bg-opacity: 1;
 background-color: rgb(var(--color-primary-500) / var(--tw-bg-opacity));
 color: rgb(var(--on-primary));
@@ -271,6 +271,7 @@ textarea{
 container>form{
 	display: flex;
 	flex-direction: column;
+	gap: 10px;
 	color: rgb(var(--on-surface));
 }
 container div{
