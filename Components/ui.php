@@ -9,6 +9,7 @@ function user_info(){
 }
 
 function mostrar_lista_docentes($row){
+    $estado = "";
     if($row['Estado']==1) $estado="desactivado";
     return "
     <tr class=\"". $estado."\">
