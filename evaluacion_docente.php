@@ -57,6 +57,7 @@ $lista_preguntas= get_preguntas();
                 while($row = mysqli_fetch_array($lista_preguntas)){
                     $avg = mysqli_fetch_array(show_avg($i,$_GET['docente_id']))['promedio'];
                     mostrar_avg($row['id'],$avg);
+                    echo "ROW = ".$row['id']."  AVG= ".$avg;
                 }
             ?>
         </div>
