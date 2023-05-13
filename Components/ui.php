@@ -46,10 +46,10 @@ function mostrar_preguntas($row){
         </div>";
 }
 
-function mostrar_avg($avg){
+function mostrar_avg($pregunta,$avg){
     return "<div>
                 <h3> Pregunta "
-                    . $avg['id_pregunta'].
+                    . $pregunta.
                 "</h3>
                 <h3>"
                     . $avg['resultado'].   
