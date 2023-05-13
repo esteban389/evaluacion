@@ -94,7 +94,9 @@
 	--color-surface-800: 31 31 31; /* ⬅ #1f1f1f */
 	--color-surface-900: 25 25 25; /* ⬅ #191919 */
 }
-
+::selection{
+	background-color: rgb(var(--color-tertiary-300));
+}
 *, *::before, *::after {
   box-sizing: border-box;
 }

@@ -35,7 +35,7 @@ $lista_modulos= get_modulos();
         <h2 style="color: white;"> Nombre</h2>
         <?php
         while($row = mysqli_fetch_array($lista_modulos)){
-            echo mostrar_lista($row);
+            echo mostrar_lista_docentes($row);
         }
         ?>
     </div>
