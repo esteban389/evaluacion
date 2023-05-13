@@ -37,13 +37,19 @@
         }
     }
 
-    function get_modulos():mysqli_result{
+    function get_preguntas(){
+        return  mysqli_query($GLOBALS['db'],
+        "SELECT* 
+        FROM Preguntas");
+    }
+
+    function get_modulos(){
         return  mysqli_query($GLOBALS['db'],
         "SELECT* 
         FROM Modulo");
     }
 
-    function get_docente($id_docente):mysqli_result{
+    function get_docente($id_docente){
         return  mysqli_query($GLOBALS['db'],
         "SELECT* 
         FROM Modulo

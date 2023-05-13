@@ -30,4 +30,19 @@ function mostrar_lista_docentes($row){
     </tr>";
 }
 
+function mostrar_preguntas($row){
+    return 
+        "<div>
+            <p>
+                El docente mantiene el liderazgo durante la clase
+            </p>
+            <select name=\"pregunta".$row['id']."\" id=\"".$row['id']."\">
+                option value=\"1\">1</option>
+                <option value=\"2\">2</option>
+                <option value=\"3\">3</option>
+                <option value=\"4\">4</option>
+                <option value=\"5\">5</option>
+            </select>
+        </div>";
+}
 ?>
