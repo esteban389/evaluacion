@@ -54,7 +54,9 @@ $lista_preguntas= get_preguntas();
                 </h2>
             </div>
             <?php
-               
+               while($row = mysqli_fetch_array($lista_preguntas)){
+                echo mostrar_preguntas($row);
+            }
             ?>
         </div>
     </container>
