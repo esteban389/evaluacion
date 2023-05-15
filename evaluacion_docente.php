@@ -53,11 +53,46 @@ $lista_preguntas= get_preguntas();
                     Promedio
                 </h2>
             </div>
-            <?php
-               while($row = mysqli_fetch_array($lista_preguntas)){
-                echo mostrar_preguntas($row);
-            }
-            ?>
+            <div>
+                <h3>
+                    Pregunta 1
+                </h3>
+                <h3>
+                    <?php echo show_avg("1", $_GET['id_docente']) ?>   
+                </h3>
+            </div>
+            <div>
+                <h3>
+                    Pregunta 2
+                </h3>
+                <h3>
+                    <?php echo show_avg("2", $_GET['id_docente']) ?>   
+                </h3>
+            </div>
+            <div>
+                <h3>
+                    Pregunta 3
+                </h3>
+                <h3>
+                    <?php echo show_avg("3", $_GET['id_docente']) ?>   
+                </h3>
+            </div>
+            <div>
+                <h3>
+                    Pregunta 4
+                </h3>
+                <h3>
+                    <?php echo show_avg("4", $_GET['id_docente']) ?>   
+                </h3>
+            </div>
+            <div>
+                <h3>
+                    Pregunta 5
+                </h3>
+                <h3>
+                    <?php echo show_avg("5", $_GET['id_docente']) ?>   
+                </h3>
+            </div>
         </div>
     </container>
 </body>
