@@ -58,7 +58,7 @@ $lista_preguntas= get_preguntas();
                     Pregunta 1
                 </h3>
                 <h3>
-                    <?php echo show_avg("1", $_GET['id_docente']) ?>   
+                    <?php echo show_avg("1", $_GET['docente_id']) ?>   
                 </h3>
             </div>
             <div>
@@ -66,7 +66,7 @@ $lista_preguntas= get_preguntas();
                     Pregunta 2
                 </h3>
                 <h3>
-                    <?php echo show_avg("2", $_GET['id_docente']) ?>   
+                    <?php echo show_avg("2", $_GET['docente_id']) ?>   
                 </h3>
             </div>
             <div>
@@ -74,7 +74,7 @@ $lista_preguntas= get_preguntas();
                     Pregunta 3
                 </h3>
                 <h3>
-                    <?php echo show_avg("3", $_GET['id_docente']) ?>   
+                    <?php echo show_avg("3", $_GET['docente_id']) ?>   
                 </h3>
             </div>
             <div>
@@ -82,7 +82,7 @@ $lista_preguntas= get_preguntas();
                     Pregunta 4
                 </h3>
                 <h3>
-                    <?php echo show_avg("4", $_GET['id_docente']) ?>   
+                    <?php echo show_avg("4", $_GET['docente_id']) ?>   
                 </h3>
             </div>
             <div>
@@ -90,7 +90,7 @@ $lista_preguntas= get_preguntas();
                     Pregunta 5
                 </h3>
                 <h3>
-                    <?php echo show_avg("5", $_GET['id_docente']) ?>   
+                    <?php echo show_avg("5", $_GET['docente_id']) ?>   
                 </h3>
             </div>
         </div>
