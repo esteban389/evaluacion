@@ -61,7 +61,7 @@ $lista_preguntas= get_preguntas();
                     Pregunta 1
                 </h3>
                 <h3>
-                    <?php echo show_avg("1", $_GET['docente_id']) ?>   
+                    <?php echo round(show_avg("1", $_GET['docente_id']),2); ?>   
                 </h3>
             </div>
             <div>
