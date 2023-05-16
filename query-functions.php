@@ -53,7 +53,8 @@
         return  mysqli_query($GLOBALS['db'],
         "SELECT* 
         FROM Modulo
-        WHERE id=$id_docente");
+        WHERE id=$id_docente
+        ORDER BY Estado");
     }
 
     function insert_evaluacion($id_docente){

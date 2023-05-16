@@ -30,6 +30,9 @@ $lista_preguntas= get_preguntas();
         ?>
         <a class="btn logout-btn" href="lista_docentes.php?close_session=true" >salir</a>
     </header>
+    <h1 class="warning">
+        <?php echo $docente['Docente'];?>
+    </h1>
     <container>
         <form class="lista" method="POST" style="padding: 20px;">
             <?php
